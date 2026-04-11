@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Website!</title>
+    <meta charset="UTF-8">
+    <title>Wood Knowledge Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Welcome to my ICSpark Final Project Website!</h1>
-    
-    <p>
-        Before you begin working on your final project, take the time to try and think of what you want your final project to be! 
-        This website should be something you're proud of since you'll show it off to your friends and family at the end of the program!
-    </p>
-    
-    <p>
-        This website can be whatever you want, as long as you can make it! Make sure that your idea isn't too big and difficult, but not too small and short either! 
-        If you can't come up with a final website idea, here are a few ideas:
-    </p>
-    
-    <ul>
-        <li><strong>A Personality Quiz</strong> – Make a personality quiz out of your favorite game or show! Use JavaScript to ask questions and decide on what the quiz taker's character is!</li>
-        <li><strong>A Cookie Clicker Game</strong> – Clicking on a picture increases your score, and you can make upgrades to increase your score further! It doesn't have to be a cookie, either! It can be whatever you want, it's your website!</li>
-        <li><strong>Advanced Mad Libs Creator</strong> – If you liked the Mad Libs project from Week 5, you can build onto it by adding more and more scenarios!</li>
-        <li><strong>Wiki</strong> – If you have a favorite game or show you want to make your own wiki about, make it! You can have multiple pages on your website.</li>
-        <li><strong>Choose Your Own Adventure Game</strong> – The website gives the user a scenario and a choice, and each choice will lead them down a new path in a story of your creation!</li>
-        <li><strong>Flashcard Study Website</strong> – Want to test your friends, or help them study for something? Make a website that has interactable flashcards that give the answer when clicked!</li>
-        <li><strong>Trivia Game</strong> – If you have tricky trivia questions to ask about a TV series, a game, or even about yourself, make a trivia website for others to tackle!</li>
-        <li><strong>Whatever You Want!</strong> – It's your website! As long as you believe you can finish it in a couple of weeks, go for it! Your mentors will be there to help you if you ever get stuck!</li>
-    </ul>
 
-    <script src="script.js"></script>
+<h1>Wood Knowledge Quiz</h1>
+
+<form id="quizForm">
+    <p>1. Which type of wood is commonly used for making furniture?</p>
+    <label><input type="radio" name="q1" value="Oak"> Oak</label><br>
+    <label><input type="radio" name="q1" value="Balsa"> Balsa</label><br>
+    <label><input type="radio" name="q1" value="Pine"> Pine</label><br><br>
+
+    <p>2. Which wood is the lightest in weight?</p>
+    <label><input type="radio" name="q2" value="Balsa"> Balsa</label><br>
+    <label><input type="radio" name="q2" value="Teak"> Teak</label><br>
+    <label><input type="radio" name="q2" value="Mahogany"> Mahogany</label><br><br>
+
+    <p>3. Which wood is naturally resistant to water?</p>
+    <label><input type="radio" name="q3" value="Teak"> Teak</label><br>
+    <label><input type="radio" name="q3" value="Maple"> Maple</label><br>
+    <label><input type="radio" name="q3" value="Birch"> Birch</label><br><br>
+
+    <p>4. Which part of the tree produces new wood growth?</p>
+    <label><input type="radio" name="q4" value="Cambium"> Cambium</label><br>
+    <label><input type="radio" name="q4" value="Heartwood"> Heartwood</label><br>
+    <label><input type="radio" name="q4" value="Sapwood"> Sapwood</label><br><br>
+
+    <p>5. Which wood is known for its reddish-brown color?</p>
+    <label><input type="radio" name="q5" value="Mahogany"> Mahogany</label><br>
+    <label><input type="radio" name="q5" value="Ash"> Ash</label><br>
+    <label><input type="radio" name="q5" value="Cedar"> Cedar</label><br><br>
+
+    <button type="button" id="submitBtn">Submit Quiz</button>
+</form>
+
+<div id="result"></div>
+
+<img id="explosion" 
+     src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Explosion-155624_1280.png"
+     alt="Explosion">
+
+<script src="script.js"></script>
 </body>
+</html>
