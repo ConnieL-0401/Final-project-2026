@@ -2,8 +2,8 @@ document.getElementById("submitBtn").addEventListener("click", checkAnswers);
 
 function checkAnswers() {
     const correctAnswers = {
-        q1: "Oak",
-        q2: "Balsa",
+        q1: "Curse spirit",
+        q2: "",
         q3: "Teak",
         q4: "Cambium",
         q5: "Mahogany"
