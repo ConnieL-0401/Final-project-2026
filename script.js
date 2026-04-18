@@ -5,8 +5,8 @@ function checkAnswers() {
         q1: "Curse spirit",
         q2: "Riedinger",
         q3: "The Glaupunk Quadrant",
-        q4: "300,000,000"
-        q5: "450,000,000 years"
+        q4: "300,000,000",
+        q5: "450,000,000 years",
     };
 
     let allCorrect = true;
