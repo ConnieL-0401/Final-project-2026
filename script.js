@@ -19,8 +19,8 @@ const questions = [
     },
     {
         question: "What was Luffy's first bounty?",
-        choices: ["20,000", "300,000,000", "1,000"],
-        answer: "20,000",
+        choices: ["20,000", "30,000,000", "1,000"],
+        answer: "30,000,000",
         hint: "It was very small compared to later."
     },
     {
