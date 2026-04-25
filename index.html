@@ -2,48 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wood Knowledge Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Quiz Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>ball Knowledge Quiz</h1>
+    <div class="game-container">
+        <h1>Room Quiz Challenge</h1>
 
-<form id="quizForm">
-    <p>1. What is rika</p>
-    <label><input type="radio" name="q1" value="Curse spirit"> Curse spirit</label><br>
-    <label><input type="radio" name="q1" value="Sikigami"> Sikigami</label><br>
-    <label><input type="radio" name="q1" value="human"> human</label><br><br>
+        <div id="room-number">Room 1</div>
 
-    <p>2. What middle school did lebron james go to?</p>
-    <label><input type="radio" name="q2" value="Niu Valley"> Niu valley</label><br>
-    <label><input type="radio" name="q2" value="None"> None</label><br>
-    <label><input type="radio" name="q2" value="Riedinger"> Riedinger</label><br><br>
+        <div id="question-box">
+            <p id="question-text"></p>
+        </div>
 
-    <p>3. what part of the univeres is megamind planet in?</p>
-    <label><input type="radio" name="q3" value="The Alpha Quadrant"> The Alpha Quadrant</label><br>
-    <label><input type="radio" name="q3" value="The Glaupunk Quadrant"> The Glaupunk Quadrant</label><br>
-    <label><input type="radio" name="q3" value="The Delta Quadrant"> The Delta Quaderant</label><br>
+        <div id="choices"></div>
 
-    <p>4. What was luffys first bounty?</p>
-    <label><input type="radio" name="q4" value="20,000"> 20,000</label><br>
-    <label><input type="radio" name="q4" value="300,000,000"> 300,000,000</label><br>
-    <label><input type="radio" name="q4" value="1,000"> 1,000</label><br><br>
+        <div class="buttons">
+            <button id="hint-btn">Hint</button>
+            <button id="reveal-btn">Reveal Answer</button>
+        </div>
 
-    <p>5. How long have horseshoe crabs been alive as a species?</p>
-    <label><input type="radio" name="q5" value="32"> 450,000,000 years</label><br>
-    <label><input type="radio" name="q5" value="256"> 500,000 years</label><br>
-    <label><input type="radio" name="q5" value="336"> 128,000,000 months</label><br><br>
+        <p id="hint-text"></p>
+        <p id="reveal-text"></p>
 
-    <button type="button" id="submitBtn">Submit Quiz</button>
-</form>
+        <p id="feedback"></p>
+    </div>
 
-<div id="result"></div>
-
-<img id="explosion" 
-     src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Explosion-155624_1280.png"
-     alt="Explosion">
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
